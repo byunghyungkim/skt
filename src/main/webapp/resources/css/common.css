@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/*************** layout : start *****************/
+html,body {	height:100%; margin:0px; padding:0px;}
+#head {  min-width:1050px; height:44px;  position:relative;background:#313131;border-bottom:3px solid #0066cd;z-index:1;}
+#container {  min-width:1050px; min-height:100%; _height:100%; margin:-47px 0 -33px 0; }
+	#content-area{ padding:70px 0 50px 0;overflow:hidden;width:100%;}
+	#area{ width:150px; margin-left:20px; float:left; overflow-x:hidden;border:1px solid #888; height:650px;}
+	#duid{ width:200px; margin-left:20px; float:left; overflow-x:hidden;border:1px solid #888; height:650px;}
+	#content{ _float:left; margin-left:420px; _margin-left:0; margin-right:10px; position:relative;border:1px solid #888; height:650px;}	
+#foot { min-width:1050px; clear:both; position:relative; height:33px; background:#2d2d2d;}
+/*************** layout : end *****************/
+
+/*************** layout common : start *****************/
+#head h1{ width:200px; padding:15px 0 0 25px; color:#fff; font-size:14px; }
+#head p.member{ position:absolute; top:12px; right:10px; }
+#head p.member span{ color:#989898; padding-right:10px;  }
+
+#container h2{width:100%;background:#575757;text-align:center;color:#fff;height:30px;font-size:13px;padding-top:10px;margin-bottom:10px;}
+#container .dataList{height:570px;padding:10px;overflow-x:hidden;overflow-y:auto;}
+
+#foot address{ float:left; padding:8px 0 0 12px; width:200px; font-style:normal; color:#018cc3; font-size:11px; }
+.footerMenu{ float:right; padding:8px 13px 0 0;}
+	.footerMenu ul{}
+	.footerMenu ul li{ float:left;padding:0 6px 0 6px; font-size:11px; color:#999999;}	
+	.footerMenu ul li a{ color:#999999;}	
+	.footerMenu ul li.tel{ background:none; color:#94bacd;}
+	.footerMenu ul li.tel a{ color:#94bacd;}
+/*************** layout common : end *****************/
+
+/*************** basics : start *****************/
+body {font-size:12px; font-family:dotum; color:#666666; line-height:18px; margin:0px; padding:0px;}
+div, p, ul, li, table, th, td, textarea, span, form, h1, h2, h3, h4, h5, dt, dl, dd {margin:0px; padding:0px; font-size:12px; font-family:dotum; }
+ul, ol, dl, dd, dt, li	{list-style-type:none; margin:0px; padding:0px;}
+table {width:100%;}
+select {font-size:12px; color:#666666;  padding:5px 5px 4px 5px; border:1px solid #e1e1e1;}
+fieldset {border:0px; margin:0px; padding:0px;}
+legend {margin:0px; padding:0px; font-size:0px; height:0px; line-height:0px;}
+
+caption {position:absolute; display:none; width:0px; height:0px; overflow:hidden; font-size:0px; margin:0px; padding:0px; line-height:0px;} 
+img {border:0;vertical-align:top;}
+.scl{
+	scrollbar-face-color: #d1d0d5;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-darkshadow-color: #FFFFFF;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-arrow-color: #f3fafc;
+}
+.cb {clear:both;font-size:0px;line-height:0px;height:0px;}
+.al {text-align:left;} .ac {text-align:center;} .ar {text-align:right;} .aj{ text-align:justify; }
+.fL { float:left;} .fR{ float:right;} .fB{ clear:both; overflow:hidden;}
+a {color:#686868;text-decoration:none;} a:hover {color:#686868; text-decoration:none;}
+/*************** basics : end *****************/
+
+
+/*************** btn : start *****************/
+.btnWrap{text-align:right;position:absolute;bottom:10px;right:20px;}
+a.btnLogout{display:inline-block;padding-right:4px;background:#3d3d3d;border:1px solid #202020;color:#999999;line-height:22px;letter-spacing:-1px;}
+a.btnLogout span{display:block;padding:0px 7px 0 10px;background:#3d3d3d;}
+
+a.btnType{display:inline-block;padding-right:4px;background:#ececec;border:1px solid #cbcbcb;color:#0065cd;line-height:28px;letter-spacing:-1px;}
+a.btnType span,a.btnType strong{display:block;padding:0px 7px 0 10px;background:#ececec}
+
+a.btnLogin{display:inline-block;padding-right:4px;background:#548fd1;border:1px solid #3b6ca7;color:#ffffff;line-height:28px;word-spacing:-1px;text-decoration:none !important;white-space:nowrap}
+a.btnLogin span,a.btnLogin strong{display:block;padding:1px 8px 0 12px;}
+/*************** btn : end *****************/
+
+.stateON{width:15px;height:15px;background:#489337;margin:auto;}
+.stateOFF{width:15px;height:15px;background:#cdd2cc;margin:auto;}
+ul.dataArea{}
+ul.dataArea li{line-height:22px;text-align:center;}
+ul.dataArea li a:hover{color:#54a8fa}
+ul.dataArea li a.on{color:#0065cd;font-weight:bold;}
+
+ul.dataDuid{}
+ul.dataDuid li{line-height:22px;}
+ul.dataDuid li a:hover{color:#54a8fa}
+ul.dataDuid li a.on{color:#0065cd;font-weight:bold;}
+
+.tableType{padding:0 10px 20px 10px;}
+.tableType table { width:100%; border-collapse:collapse; border-top:1px solid #0066cb; border-left:1px solid #cecece; border-bottom:1px solid #cecece; border-right:1px solid #cecece;}
+.tableType a{ color:#666666; }
+.tableType a:hover{ color:#0066cc; }
+	.tableType thead tr.trT{ background:#ececec;border-bottom:1px solid #888;height:30px; }
+	.tableType thead tr th{ text-align:center;color:#000000;font-weight:normal;border-left:1px solid #cecece;border-bottom:1px solid #cecece;}	
+	.tableType thead tr.trB{ background:#f9f9f9; height:31px; }
+	.tableType thead tr.trB th{ text-align:center; color:#999999; font-weight:normal;border-bottom:1px solid #cecece;}	
+	
+	.tableType tbody tr th{background:#ececec;border-bottom:1px solid #cecece;text-align:center;color:#000000;font-weight:normal;padding:5px 0}
+	.tableType tbody tr td{ border-left:1px solid #eaeaea; border-bottom:1px solid #eaeaea;color:#666666; padding:3px 0 3px 5px; }
+	.tableType tbody td.no{ color:#989898;}	
+	.tableType tbody td.aC{text-align:center;}
+	.tableType tfoot tr td{ border-left:1px solid #eaeaea; border-bottom:1px solid #eaeaea; color:#0066cd; text-align:center; padding:5px 0 5px 0;}
+
+
+
+.tabs_wrap {padding:0 10px;font-size:11px;}
+.tabs_wrap > .table_tab {position:relative;}
+.tabs_wrap > .table_tab > li > a {position:absolute;top:0;background:#ededed;text-align:center; margin-right:1px; border:1px solid #e2e2e2; border-bottom:none; padding:0 !important;}
+.tabs_wrap > .table_tab > li > a.menu.tab01 {left:0;}
+.tabs_wrap > .table_tab > li > a.menu.tab02 {left:153px;}
+.tabs_wrap > .table_tab > li > a.menu.tab03 {left:306px;}
+.tabs_wrap > .table_tab > li > a.menu.tab04 {left:459px;}
+.tabs_wrap > .table_tab > li > a.menu.tab05 {left:283px;}
+.tabs_wrap > .table_tab > li > a.menu { display:inline-block; width:150px; line-height:28px; color:#000;font-weight:normal; text-decoration:none;}
+.tabs_wrap > .table_tab > li.on > a.menu { border:1px solid #0066cb; border-bottom:none; background:#fff;color:#333;line-height:27px;line-height:29px;}
+.tabs_wrap > .table_tab > li > .table_tab_con {padding-top:29px;}
+.tabs_wrap > .table_tab > li > .table_tab_con .line{border-top:1px solid #e2e2e2;margin-bottom:15px;}
+
+
+.wrap_loginBox{position:absolute;top:50%;left:50%;width:300px;height:150px;margin:-75px 0 0 -150px; /*width height 반*/}
+.login_area{ position:relative; }
+.login01{ position:absolute; left:0px;top:8px; }
+.login02{ position:absolute; left:70px;top:0px; }
+.login03{ position:absolute; left:0px;top:45px; }
+.login04{ position:absolute; left:70px;top:40px;}
+.login05{ position:absolute; left:70px; top:80px;}
+.login06{ position:absolute; left:0px; top:120px;}
+			
+.input_loginCheck{ border:1px solid #5e97d5; color:#666666; background:#c7e4ff; height:16px; padding:5px;}
+.input_login{ border:1px solid #e1e1e1; color:#666666; background:#ffffff; height:16px; padding:5px;}
